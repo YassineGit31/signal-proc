@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSP Pro Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 w-full bg-gray-900/75 shadow-lg transition-transform duration-300 z-50">
+        <nav class="w-full flex justify-around items-center p-4">
+            <h1 class="text-white text-2xl font-bold">DSP</h1>
+            <ul class="flex space-x-6 text-white">
+                <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                <li><a href="#tasks" class="hover:text-yellow-400">Tasks</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+    <section id="home" class="relative h-[100vh] flex items-end justify-start bg-cover bg-center p-8 " style="background-image: url('signal-bck3.jpg');">
+        <div class="mb-24" data-aos="fade-up">
+            <h1 class="text-6xl font-bold">Welcome to</h1>
+            <h2 class="text-6xl text-yellow-300 font-extrabold animate-bounce mt-2 ">Digital Signal Processing</h2>
+            <p class="text-lg text-white mt-2">
+                DSP processes signals for communication, audio, imaging, and control.
+            </p>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="h-fit px-16 py-6 text-center flex flex-col justify-center items-center shadow-xl bg-blue-950">
+        <h2 class="text-5xl font-extrabold text-blue-300 m-6" data-aos="fade-up">Discover Digital Signal Processing</h2>
+        
+        <p class="text-gray-300 max-w-2xl text-sm  mx-auto mb-24 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+            Digital Signal Processing (DSP) transforms signals into useful information through mathematical techniques. 
+            It powers technologies in telecommunications, audio processing, medical imaging, and control systems, making modern advancements possible.
+        </p>
+    
+        <div class="grid md:grid-cols-3 gap-11 w-full max-w-3xl">
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg transition-transform duration-300 relative overflow-hidden hover:scale-105 hover:shadow-blue-500/40" data-aos="flip-left">
+                <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                <h3 class="text-3xl font-semibold text-blue-400">Signal Analysis</h3>
+                <p class="mt-3 text-gray-400">
+                    Exploring how signals are captured, represented, and processed in the digital domain for various applications.
+                </p>
+            </div>
+            
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg transition-transform duration-300 relative overflow-hidden hover:scale-105 hover:shadow-blue-500/40" data-aos="flip-right">
+                <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                <h3 class="text-3xl font-semibold text-blue-400">Fourier Transform</h3>
+                <p class="mt-3 text-gray-400">
+                    Breaking down complex signals into their frequency components for deeper analysis and understanding.
+                </p>
+            </div>
+            
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg transition-transform duration-300 relative overflow-hidden hover:scale-105 hover:shadow-blue-500/40" data-aos="flip-left">
+                <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                <h3 class="text-3xl font-semibold text-blue-400">Filtering Techniques</h3>
+                <p class="mt-3 text-gray-400">
+                    Removing unwanted noise, enhancing key features, and optimizing signals for better performance.
+                </p>
+            </div>
+        </div>
+<div class="flex items-center justify-center mt-12">
+  <div class="relative group">
+    <button
+      class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+    >
+      <span
+        class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+      ></span>
+
+      <span class="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
+        <div class="relative z-10 flex items-center space-x-2">
+          <span class="transition-all duration-500 group-hover:translate-x-1"
+            > <a href="exercise1.html">
+                View Exercise 1 Solution
+            </a></span
+          >
+          <svg
+            class="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1"
+            data-slot="icon"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+      </span>
+    </button>
+  </div>
+</div>
+
+
+    </section>
+    
+    <!-- Tasks Section -->
+    <section id="tasks" class="p-10 text-center bg-gray-900 text-white">
+        <h2 class="text-4xl font-bold mb-6 text-blue-400" data-aos="fade-up">📊 Signal Processing Tasks</h2>
+        <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto" data-aos="fade-up">
+            Enter a signal expression below, and we’ll generate its graph along with energy calculations.
+        </p>
+    
+        <!-- Input Section -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-lg mx-auto" data-aos="zoom-in">
+            <h3 class="text-2xl font-semibold text-blue-300 mb-4">✍️ Enter Signal Expression</h3>
+            <input type="text" id="formulaInput" placeholder="e.g., sin(2πt) + cos(πt)" 
+                class="w-full p-3 border border-gray-600 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500 transition" />
+            
+            <!-- Smooth Scroll to Graph Output -->
+            <a href="#graphOutput">
+                <button id="submitButton" class="w-full mt-5 bg-blue-500 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-600 transition">
+                    📡 Process Signal
+                </button>
+            </a>
+        </div>
+    
+        <!-- Graph Output Section -->
+        <div id="graphOutput" class="mt-12" data-aos="zoom-in">
+            <h3 class="text-3xl font-bold text-blue-300">📈 Graph Output</h3>
+            <div class="mt-5 bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-2xl mx-auto">
+                <canvas id="signalCanvas" class="w-full bg-gray-700 p-2 rounded-md"></canvas>
+                <p id="energyOutput" class="mt-4 text-gray-300 text-lg font-semibold"></p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../static/script.js"></script>
+    <script>
+        AOS.init();
+        let lastScrollTop = 0;
+const navbar = document.getElementById("navbar"); // Change to your navbar ID
+
+window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop) {
+        navbar.style.top = "-70px"; // Hide navbar (adjust height)
+    } else {
+        navbar.style.top = "0"; // Show navbar
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
+    </script>
+</body>
+</html>
