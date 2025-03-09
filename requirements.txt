@@ -1,2 +1,5 @@
-Flask
-numpy
+flask
+gunicorn
+numpy  # (if needed)
+matplotlib  # (if needed)
+scipy  # (if needed)
